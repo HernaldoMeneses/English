@@ -1,18 +1,30 @@
-title = ''' Hello!!
-'''
-print(title)
-p = '''
-DearESL/EFL Collegues,
 
-    I once met a teacher who had recently used one of my texts in her class.
-'''
-t = '''
-Queridos ESL/EFL colegas,
 
-    Certa vez conheci um professor que tinha recentemente usado um dos meus textos em suas aulas.
-'''
+text_all = []
 
-print(p)
-try_ = input("Tente Traduzir, o que você acha que siginifica?\n")
+read_Eng = "DearESL/EFL Collegues, I once met a teacher who had recently used one of my texts in her class."
+read_Port = ""
+read_Key = {read_Eng:read_Port}
+text_all.append(read_Key)
 
-print(t)
+read_Eng = "At the end of the rem, one of her students said to her."
+read_Port = ""
+read_Key = {read_Eng:read_Port}
+text_all.append(read_Key)
+
+read_Eng = "At the end of the rem, one of her students said to her."
+read_Port = ""
+read_Key = {read_Eng:read_Port}
+text_all.append(read_Key)
+
+read_Eng = "'Thank you for teaching me the secrets of English.'"
+read_Port = ""
+read_Key = {read_Eng:read_Port}
+text_all.append(read_Key)
+
+
+
+for item in text_all:
+    for eng, port in item.items():
+        print(f'English: {eng}')
+        print(f'Portuguese: {port}\n')
